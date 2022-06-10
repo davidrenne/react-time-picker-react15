@@ -21,10 +21,11 @@ function emptyFn(){}
 var twoDigits     = require('./twoDigits')
 var format        = require('./format')
 var formatTime    = require('./formatTime')
+var createReactClass = require('create-react-class');
 
 function identity(v){ return v }
 
-module.exports = React.createClass({
+module.exports = createReactClass({
 
 	displayName: 'ReactTimePicker',
 
